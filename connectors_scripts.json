@@ -1,0 +1,604 @@
+[
+  {
+    "Name": "Blog - Create SP Items (Batch)",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/03e97ce0-9f0a-4f4e-982f-319d6925639c",
+    "State": "I AM DECEASED",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ2BW27ZY5OCMJALJ6ABXCSACGAC": "/General/Nursing Informatics and Technology Attendance.xlsx",
+      "operationMetadataId": "33ea1cbd-59fc-4084-9cbd-05ea6faf08e8",
+      "flowSystemMetadata": {
+        "swaggerOperationId": "RunScriptProd"
+      }
+    },
+    "Automation": "Blog - Create SP Items (Batch)",
+    "Script Name": "PSG Attendance"
+  },
+  {
+    "Name": "45 Days Out - Auto Replace & Extend Traveler Request",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/074de7e0-cedb-462e-a152-20327f6d470e",
+    "State": "I AM ALIVE",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "fb9e1f6e-2d6a-4c1f-abc4-a0adcb7be7dd",
+      "tableId": null
+    },
+    "Automation": "45 Days Out - Auto Replace & Extend Traveler Request",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Name": "Float Survey Responses v3",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/11ac0f14-3556-46be-a157-0bcf2321cb2c",
+    "State": "I AM DECEASED",
+    "Triggered type": "OpenApiConnectionWebhook",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": "Send a push notification each time a response to a Microsoft Form is received.",
+    "In use with": {
+      "01ALQMD6OCNM2VZOQINZHYYK3LFBFNBDMW": "/Float Analytics/Float Experience Survey.xlsx",
+      "tableId": null
+    },
+    "Automation": "Float Survey Responses v3",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "Float Survey Executive Summary mk2",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/1e0c166f-9dbd-4401-a462-cce0840e9256",
+    "State": "I AM ALIVE",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": "Send a push notification each time a response to a Microsoft Form is received.",
+    "In use with": {
+      "01ALQMD6OCNM2VZOQINZHYYK3LFBFNBDMW": "/Float Analytics/Float Experience Survey.xlsx",
+      "tableId": null,
+      "operationMetadataId": "2ef10aff-5a0e-4ec1-a2ae-e9bc11d5e22d"
+    },
+    "Automation": "Float Survey Executive Summary mk2",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "JSON Trials",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/28efe91f-e149-44f1-a931-f3512b3b0097",
+    "State": "I AM ALIVE",
+    "Triggered type": "OpenApiConnection",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "31a16da7-f06f-4554-a82f-871fdc831e62",
+      "tableId": null
+    },
+    "Automation": "JSON Trials",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Name": "Nursing Informatics and Technology Attendance",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/3b230ecc-c8ad-4109-b3da-f096f75dd2cf",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ5LMS66JPDJUBC2XVRDOALX7P73": "/General/Nursing Professional Practice Attendance.xlsx",
+      "operationMetadataId": "d6278119-a8da-46c3-94ae-7d36acd1c3b7",
+      "tableId": null,
+      "01UR43YJ6SWNS2CVBRZNBIJS7LGODOA4A2": "/General/Nursing Education Attendance.xlsx",
+      "01UR43YJ2V73PA5RLPTFCJEI4DU6JDBKGQ": "/General/Nursing Quality and Safety Attendance.xlsx",
+      "01UR43YJY72QZPUXNSKJD2326VWRZNZGI6": "/General/Nursing Recognition Attendance.xlsx",
+      "01UR43YJ2BW27ZY5OCMJALJ6ABXCSACGAC": "/General/Nursing Informatics and Technology Attendance.xlsx"
+    },
+    "Automation": "Nursing Informatics and Technology Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Name": "Nursing Quality and Safety Attendance",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/3c672bd2-5c9c-4c90-b60d-b5f832924f11",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ5LMS66JPDJUBC2XVRDOALX7P73": "/General/Nursing Professional Practice Attendance.xlsx",
+      "operationMetadataId": "d6278119-a8da-46c3-94ae-7d36acd1c3b7",
+      "tableId": null,
+      "01UR43YJ6SWNS2CVBRZNBIJS7LGODOA4A2": "/General/Nursing Education Attendance.xlsx",
+      "01UR43YJ2V73PA5RLPTFCJEI4DU6JDBKGQ": "/General/Nursing Quality and Safety Attendance.xlsx"
+    },
+    "Automation": "Nursing Quality and Safety Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Name": "Appreciation Week Emails",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/43fb3ab2-565e-4611-a146-da7f5223bb0e",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01QBQK6JV7TKE3TZDSPFCLEMHQ5WZU7U4D": "/Happy Appreciation Week!.xlsx",
+      "operationMetadataId": "d40a8fd3-8fc5-4cdf-a6d2-eb53089c9365",
+      "tableId": null
+    },
+    "Automation": "Appreciation Week Emails",
+    "Script Name": "Appreciation Week Emails"
+  },
+  {
+    "Name": "Bulk add items to SharePoint Lists",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/49b1e779-8a82-407a-a96d-9252e2e5ef55",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ2BW27ZY5OCMJALJ6ABXCSACGAC": "/General/Nursing Informatics and Technology Attendance.xlsx",
+      "operationMetadataId": "7a40f998-76b0-4222-a58e-37ba66f6fdb9"
+    },
+    "Automation": "Bulk add items to SharePoint Lists",
+    "Script Name": "PSG Attendance"
+  },
+  {
+    "Name": "Get Traveler Approvers OOO Status",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/4eaf318f-cae7-45bd-9f46-608f95f4a38d",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "31a16da7-f06f-4554-a82f-871fdc831e62",
+      "tableId": null
+    },
+    "Automation": "Get Traveler Approvers OOO Status",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Name": "Manager Template for List",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/5fa9c332-ecc4-4a0c-8c5a-27482d3c602d",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01WALS63PV22X4VGSIS5FJMSDD6EXWEX6I": "/General/Nursing Leadership Level Template.xlsx",
+      "operationMetadataId": "ab5666c0-bbb1-4581-8e50-1d361c3a2f7e",
+      "tableId": null
+    },
+    "Automation": "Manager Template for List",
+    "Script Name": "Leadership"
+  },
+  {
+    "Name": "Nursing Research Attendance",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/68ca64b1-6806-4893-a390-767dc2a050a3",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ5LMS66JPDJUBC2XVRDOALX7P73": "/General/Nursing Professional Practice Attendance.xlsx",
+      "operationMetadataId": "d6278119-a8da-46c3-94ae-7d36acd1c3b7",
+      "tableId": null,
+      "01UR43YJ6SWNS2CVBRZNBIJS7LGODOA4A2": "/General/Nursing Education Attendance.xlsx",
+      "01UR43YJ2V73PA5RLPTFCJEI4DU6JDBKGQ": "/General/Nursing Quality and Safety Attendance.xlsx",
+      "01UR43YJY72QZPUXNSKJD2326VWRZNZGI6": "/General/Nursing Recognition Attendance.xlsx",
+      "01UR43YJ2BW27ZY5OCMJALJ6ABXCSACGAC": "/General/Nursing Informatics and Technology Attendance.xlsx",
+      "01UR43YJ6EBZT7IB6H4ZELX5WAS3U734HF": "/General/Nursing Research Attendance.xlsx"
+    },
+    "Automation": "Nursing Research Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Name": "Run an Office Script in Excel",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/71719a3e-b015-46ba-91ea-e982bb9b5ba1",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "ApiConnection",
+    "Operation": "RunScriptProd",
+    "Description": "Use this button to run an Office Script on an Excel workbook.",
+    "In use with": {
+      "01EOQVJPACFPKIFFWFWBFKP7EQ5LBBO36X": "/General/Hand Hygiene \u2022 Styles Reporting/CFMH 2022 Hand Hygiene.xlsx",
+      "operationMetadataId": "fc4036c9-5976-4982-a161-8dff3bdfc6a2",
+      "tableId": null
+    },
+    "Automation": "Run an Office Script in Excel",
+    "Script Name": "Read the active cell"
+  },
+  {
+    "Name": "Certified Nurses Day Emails",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/7b841ddb-a447-4069-a0c4-47722f4f5c28",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01QBQK6JT62BEZ64MPBREIDTV46UX3XKYV": "/General/2023_RNS.xlsx",
+      "operationMetadataId": "d88ab240-0b1d-4ac1-aa9a-788818239adf"
+    },
+    "Automation": "Certified Nurses Day Emails",
+    "Script Name": "Get_myh_emails"
+  },
+  {
+    "Name": "Float Survey Executive Summary",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/88f36dd5-8255-4010-a9ae-ff5f2cf5c980",
+    "State": "I AM DECEASED",
+    "Triggered type": "Request",
+    "Triggered by": "ApiConnection",
+    "Operation": "RunScriptProd",
+    "Description": "Send a push notification each time a response to a Microsoft Form is received.",
+    "In use with": {
+      "01ALQMD6OCNM2VZOQINZHYYK3LFBFNBDMW": "/Float Analytics/Float Experience Survey.xlsx",
+      "tableId": null
+    },
+    "Automation": "Float Survey Executive Summary",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "Scheduler Form",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/9b9d198b-dc40-4406-827b-1ef06477726a",
+    "State": "I AM ALIVE",
+    "Triggered type": "OpenApiConnectionWebhook",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "013WN7I3NA3723AQQKPFD3CEDLXEIB57MW": "/General/Resources/Coding Stuffsssssss/Hour Calculator.xlsx",
+      "tableId": null,
+      "operationMetadataId": "4437efd7-cf94-41a6-89f0-fee7b757d2a2"
+    },
+    "Automation": "Scheduler Form",
+    "Script Name": "Sum Hours"
+  },
+  {
+    "Name": "WFH Report",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/a081f3fe-1fca-4245-8a95-a3885ee7d996",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01IA5CB45BHCWGMCRYXJELCXOVKCMBDOWH": "/General/Working From Home_.xlsx",
+      "tableId": null,
+      "operationMetadataId": "06211a85-a899-4df5-b0eb-a149a9ed22da"
+    },
+    "Automation": "WFH Report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Name": "Float Survey Summary for PLC Members",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/a23d3be9-43d3-4e3a-92cc-634f2b9dfde6",
+    "State": "I AM DECEASED",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": "Send a push notification each time a response to a Microsoft Form is received.",
+    "In use with": {
+      "01ALQMD6OCNM2VZOQINZHYYK3LFBFNBDMW": "/Float Analytics/Float Experience Survey.xlsx",
+      "tableId": null,
+      "operationMetadataId": "f89556bc-8e0d-4062-939e-b1117e51804d"
+    },
+    "Automation": "Float Survey Summary for PLC Members",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "Float Survey Responses v2",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/a681b9e9-5869-4b07-b70d-ce5a95184aaa",
+    "State": "I AM ALIVE",
+    "Triggered type": "OpenApiConnectionWebhook",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": "Send a push notification each time a response to a Microsoft Form is received.",
+    "In use with": {
+      "01ALQMD6OCNM2VZOQINZHYYK3LFBFNBDMW": "/Float Analytics/Float Experience Survey.xlsx",
+      "tableId": null,
+      "operationMetadataId": "8b06b742-b2eb-49ca-ace0-8af554db35e0"
+    },
+    "Automation": "Float Survey Responses v2",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "Internal Traveler Data from AAD",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/aea4895d-1149-48f5-b518-981713778274",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "31a16da7-f06f-4554-a82f-871fdc831e62",
+      "tableId": null,
+      "01UR43YJ7R2W5FGTXDHBFYCPSGSMI4P22O": "/General/Roster for All PSG Councils.xlsx",
+      "01VV32LQNQJTAYUCCZWBHKAZUN2ZUEZGII": "/HR Reports/Current Traveler Listing.xlsx"
+    },
+    "Automation": "Internal Traveler Data from AAD",
+    "Script Name": "Traveler ID Numbers"
+  },
+  {
+    "Name": "HH Daily Huddle Excel Form",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/afdcc6d8-73b4-4d34-b887-0f3ef07334d4",
+    "State": "I AM DECEASED",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": null,
+    "Automation": "HH Daily Huddle Excel Form",
+    "Script Name": "Daily Huddle Prep"
+  },
+  {
+    "Name": "Move DAISY and BEE Awards to Lists",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/b0c145fa-91e5-4a24-904e-f0997ded16e7",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ6YN7G5RDHLZ5EKAQ5S2BEDEUI4": "/The BEE Award Nomination Form.xlsx",
+      "operationMetadataId": "3509424a-23d7-4cfb-bdcb-0742c203a6f7",
+      "tableId": null,
+      "01UR43YJ4VUBCS7NBBYJB26VKCHCJHHHPL": "/Shared Documents/2022 DAISY Nominations.xlsx",
+      "01UR43YJZPSFY7IUUVAJDY5BSNMEFFTKWA": "/Prior BEE Nominations.xlsx"
+    },
+    "Automation": "Move DAISY and BEE Awards to Lists",
+    "Script Name": "PSG Attendance"
+  },
+  {
+    "Name": "Update Members",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/b2f4f401-fb31-4d8c-9e0d-9049e55121bf",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01WALS63NTAAIY25QMGVGZPUKT2TQC5RGA": "/General/Update Members.xlsx",
+      "operationMetadataId": "98cb6ba1-94b3-4b69-a6a8-bb05d052459c",
+      "tableId": null
+    },
+    "Automation": "Update Members",
+    "Script Name": "Update Members"
+  },
+  {
+    "Name": "Requested Float Survey Responses",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/b4a3ce7b-55b0-493b-977d-aad5631bf1ce",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": "Send a push notification each time a response to a Microsoft Form is received.",
+    "In use with": {
+      "01ALQMD6OCNM2VZOQINZHYYK3LFBFNBDMW": "/Float Analytics/Float Experience Survey.xlsx",
+      "tableId": null,
+      "operationMetadataId": "1b64fba4-b867-4132-881d-c710b1775de7"
+    },
+    "Automation": "Requested Float Survey Responses",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "Nursing Education Attendance",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/bd131ee9-df38-40a2-977b-a4d7e7170486",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ5LMS66JPDJUBC2XVRDOALX7P73": "/General/Nursing Professional Practice Attendance.xlsx",
+      "operationMetadataId": "d6278119-a8da-46c3-94ae-7d36acd1c3b7",
+      "tableId": null,
+      "01UR43YJ6SWNS2CVBRZNBIJS7LGODOA4A2": "/General/Nursing Education Attendance.xlsx"
+    },
+    "Automation": "Nursing Education Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Name": "Nursing Recognition Attendance",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/c0ff0072-affa-4b7a-bbc4-32405fdebe45",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ5LMS66JPDJUBC2XVRDOALX7P73": "/General/Nursing Professional Practice Attendance.xlsx",
+      "operationMetadataId": "d6278119-a8da-46c3-94ae-7d36acd1c3b7",
+      "tableId": null,
+      "01UR43YJ6SWNS2CVBRZNBIJS7LGODOA4A2": "/General/Nursing Education Attendance.xlsx",
+      "01UR43YJ2V73PA5RLPTFCJEI4DU6JDBKGQ": "/General/Nursing Quality and Safety Attendance.xlsx",
+      "01UR43YJY72QZPUXNSKJD2326VWRZNZGI6": "/General/Nursing Recognition Attendance.xlsx"
+    },
+    "Automation": "Nursing Recognition Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Name": "Lindsay Dudley's Warehouse Inventory Report",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/cc59813e-9cb2-47fa-ba86-901e14e33565",
+    "State": "I AM ALIVE",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "0174ASD5YFDGDTYLS6Y5HKZWGPMHYL2TVN": "/Mail Room_Correspondence/Supply Orders.xlsx",
+      "operationMetadataId": "8338d473-d6f3-407f-b873-fbf306f27dde",
+      "tableId": null
+    },
+    "Automation": "Lindsay Dudley's Warehouse Inventory Report",
+    "Script Name": "Autofit Columns | Table of Contents"
+  },
+  {
+    "Name": "Send all Managers WFH Report",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/d34faf87-d23b-472e-9e56-599dac09468f",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": "This process grabs all known data from the WFH report and sends it to the applicable managers once a month.  This process can be scheduled but I have chosen not to - so we can review the data prior to sending it out to managers.  Once you are happy with the results found in the WFH report - click 'run' and the process should take off.  Average run-time elongated due to concurrency barriers regarding API requests.",
+    "In use with": {
+      "01IA5CB45BHCWGMCRYXJELCXOVKCMBDOWH": "/General/Working From Home_.xlsx",
+      "tableId": null,
+      "operationMetadataId": "06211a85-a899-4df5-b0eb-a149a9ed22da"
+    },
+    "Automation": "Send all Managers WFH Report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Name": "Request an automated replacement or extension",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/d4aec776-ee0c-48c5-93f5-d5b0966fd6e5",
+    "State": "I AM ALIVE",
+    "Triggered type": "OpenApiConnectionWebhook",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "99c7a6b1-d901-4af6-ad0b-e4148c05eb9b",
+      "tableId": null
+    },
+    "Automation": "Request an automated replacement or extension",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Name": "Nursing Professional Practice Attendance",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/e5993e72-1429-4e7c-9a2b-5c8e36478d89",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01UR43YJ5LMS66JPDJUBC2XVRDOALX7P73": "/General/Nursing Professional Practice Attendance.xlsx",
+      "operationMetadataId": "d6278119-a8da-46c3-94ae-7d36acd1c3b7",
+      "tableId": null
+    },
+    "Automation": "Nursing Professional Practice Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Name": "Traveler Reporting",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/e8d29df2-c2f6-42d6-b083-dfbd5184bce9",
+    "State": "I AM ALIVE",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "operationMetadataId": "c49b7979-2a16-4023-bcfc-15d0233416d4",
+      "tableId": null
+    },
+    "Automation": "Traveler Reporting",
+    "Script Name": "Weekly Traveler Report"
+  },
+  {
+    "Name": "Send a manager the WFH report",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/eba31b6a-1c73-4a7f-8f16-8a54b168e070",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": "You can resend a specific WFH results email to any individual regarding any manager's results using this flow.  Even send one to yourself regarding another managers' report",
+    "In use with": {
+      "01IA5CB45BHCWGMCRYXJELCXOVKCMBDOWH": "/General/Working From Home_.xlsx",
+      "tableId": null,
+      "operationMetadataId": "06211a85-a899-4df5-b0eb-a149a9ed22da"
+    },
+    "Automation": "Send a manager the WFH report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Name": "Backup Scheduler Form",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/ee234c6d-da85-498b-9706-a74330a5e7c8",
+    "State": "I AM DECEASED",
+    "Triggered type": "OpenApiConnectionWebhook",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "013WN7I3NA3723AQQKPFD3CEDLXEIB57MW": "/General/Resources/Coding Stuffsssssss/Hour Calculator.xlsx",
+      "tableId": null
+    },
+    "Automation": "Backup Scheduler Form",
+    "Script Name": "Sum Hours"
+  },
+  {
+    "Name": "PB CR Report",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/ee5d7620-55e9-43c5-99a7-4ed2e55b6823",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Button",
+    "Operation": "RunScriptProd",
+    "Description": "This process sends out the emails to the recipients of the PB CR Report.  It reviews the preset data points in the excel file and orders it into a specific email template.  Just click 'run' and it shoots it off!",
+    "In use with": {
+      "01IA5CB4ZRT4W4MZ7FWZFIJPOE4ONRUZT7": "/General/PB WQs Reports/PB CR WQ Report.xlsx",
+      "tableId": null,
+      "operationMetadataId": "da5ec662-6587-488e-9fc3-cc2906cf05ad"
+    },
+    "Automation": "PB CR Report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Name": "60 Days Out - Auto Replace & Extend Traveler Request",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/f005506f-67d5-4dc1-be95-de6fa4d3ad6e",
+    "State": "I AM ALIVE",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "514ab79c-cb96-4914-956c-ca76ed4f0f3c"
+    },
+    "Automation": "60 Days Out - Auto Replace & Extend Traveler Request",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Name": "Qualtrics Staffing Report",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/f376999f-4100-4318-affc-d44cffd366d0",
+    "State": "I AM ALIVE",
+    "Triggered type": "Request",
+    "Triggered by": "Http",
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01ALQMD6NPFOL43THHTJDYXA75OJ3PZBC7": "/General/Monthly Reports/Automated Staffing Report 2.0.xlsx",
+      "operationMetadataId": "191b4d06-154a-4fa1-a4e9-695ca143cb6b",
+      "tableId": null
+    },
+    "Automation": "Qualtrics Staffing Report",
+    "Script Name": "Script 1"
+  },
+  {
+    "Name": "Traveler Graph Database",
+    "Link": "https://make.powerautomate.com/environments/Default-71a69018-0794-41c0-80a8-d13e1faf30a6/flows/f8cb7a0b-1537-44e7-beee-c69bc48b4f49",
+    "State": "I AM ALIVE",
+    "Triggered type": "Recurrence",
+    "Triggered by": null,
+    "Operation": "RunScriptProd",
+    "Description": null,
+    "In use with": {
+      "01G3SX7CNWRXMJTDDDKBAJTYXHNPJ2JK4B": "/General/Traveler Graph/Traveler Graphs.xlsx",
+      "operationMetadataId": "24197cd9-662e-4a3b-9511-4a82319dafee",
+      "tableId": null
+    },
+    "Automation": "Traveler Graph Database",
+    "Script Name": "Domestic Table to JSON Short"
+  }
+]

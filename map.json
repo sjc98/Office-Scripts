@@ -1,0 +1,150 @@
+[
+  {
+    "Automation": "45 Days Out - Auto Replace & Extend Traveler Request",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Automation": "60 Days Out - Auto Replace & Extend Traveler Request",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Automation": "Appreciation Week Emails",
+    "Script Name": "Appreciation Week Emails"
+  },
+  {
+    "Automation": "Backup Scheduler Form",
+    "Script Name": "Sum Hours"
+  },
+  {
+    "Automation": "Blog - Create SP Items (Batch)",
+    "Script Name": "PSG Attendance"
+  },
+  {
+    "Automation": "Bulk add items to SharePoint Lists",
+    "Script Name": "PSG Attendance"
+  },
+  {
+    "Automation": "Certified Nurses Day Emails",
+    "Script Name": "Get_myh_emails"
+  },
+  {
+    "Automation": "Float Survey Executive Summary",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Float Survey Executive Summary mk2",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Float Survey Responses v2",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Float Survey Responses v3",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Float Survey Summary for PLC Members",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Get Traveler Approvers OOO Status",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Automation": "HH Daily Huddle Excel Form",
+    "Script Name": "Daily Huddle Prep"
+  },
+  {
+    "Automation": "Internal Traveler Data from AAD",
+    "Script Name": "Traveler ID Numbers"
+  },
+  {
+    "Automation": "JSON Trials",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Automation": "Lindsay Dudley's Warehouse Inventory Report",
+    "Script Name": "Autofit Columns | Table of Contents"
+  },
+  {
+    "Automation": "Manager Template for List",
+    "Script Name": "Leadership"
+  },
+  {
+    "Automation": "Move DAISY and BEE Awards to Lists",
+    "Script Name": "PSG Attendance"
+  },
+  {
+    "Automation": "Nursing Education Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Automation": "Nursing Informatics and Technology Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Automation": "Nursing Professional Practice Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Automation": "Nursing Quality and Safety Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Automation": "Nursing Recognition Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Automation": "Nursing Research Attendance",
+    "Script Name": "Update Attendance"
+  },
+  {
+    "Automation": "PB CR Report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Automation": "Qualtrics Staffing Report",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Request an automated replacement or extension",
+    "Script Name": "Convert Domestic Traveler Graph to JSON"
+  },
+  {
+    "Automation": "Requested Float Survey Responses",
+    "Script Name": "Script 1"
+  },
+  {
+    "Automation": "Run an Office Script in Excel",
+    "Script Name": "Read the active cell"
+  },
+  {
+    "Automation": "Scheduler Form",
+    "Script Name": "Sum Hours"
+  },
+  {
+    "Automation": "Send a manager the WFH report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Automation": "Send all Managers WFH Report",
+    "Script Name": "Script 2"
+  },
+  {
+    "Automation": "Traveler Graph Database",
+    "Script Name": "Domestic Table to JSON Short"
+  },
+  {
+    "Automation": "Traveler Reporting",
+    "Script Name": "Weekly Traveler Report"
+  },
+  {
+    "Automation": "Update Members",
+    "Script Name": "Update Members"
+  },
+  {
+    "Automation": "WFH Report",
+    "Script Name": "Script 2"
+  }
+]
